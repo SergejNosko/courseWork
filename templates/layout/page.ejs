@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza</title>
+    <link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/app.css"/>
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/vendor/slick-1.6.0/slick/slick.css">
+</head>
+<body>
+<header id="top">
+    <div class="main-menu">
+        <img src="/images/logo.png" alt="">
+            <ul>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#pizza" class="scroll">ВЫБРАТЬ ПИЦЦУ</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#salat" class="scroll">ВЫБРАТЬ ЗАКУСКИ</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#drinks" class="scroll">ВЫБРАТЬ НАПИТКИ</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#order" class="scroll">ОФОРМИТЬ ЗАКАЗ</a></li>
+            </ul>
+        <div class="phone">
+            <span class="sign">Заказать по телефону:</span><br>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <div>+7(495)<span>923-35-74</span></div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slider-item">
+            <div class="slider-item-sign">
+                <h1>Пицца <br> Неаполитана</h1>
+                <p>Великолепная, пикантная, гарячая <br> итальянская пицца с апетитным <br> французким сыром.</p>
+                <div class="product-buttons">
+                    <div class="check check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="11" data-name="Неаполитана" data-price="150">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <img src="/images/neapolitana.png" alt="">
+        </div>
+        <div class="slider-item">
+            <div class="slider-item-sign">
+                <h1>Пицца <br> Папперони</h1>
+                <p>Великолепная, пикантная, гарячая <br> итальянская пицца с апетитным <br> французким сыром.</p>
+                <div class="product-buttons">
+                    <div class="check check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="12" data-name="Папперони" data-price="120">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <img src="/images/pepperony.png" alt="">
+        </div>
+        <div class="slider-item">
+            <div class="slider-item-sign">
+                <h1>Пицца <br> Тропикана</h1>
+                <p>Великолепная, пикантная, гарячая <br> итальянская пицца с апетитным <br> французким сыром.</p>
+                <div class="product-buttons">
+                    <div class="check check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="13" data-name="Тропикана" data-price="130">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <img src="/images/tropicana.png" alt="">
+        </div>
+    </div>
+</header>
+
+<section class="pizza">
+    <div class="pizza-content">
+        <button type="button" class="button-down scroll" href="#pizza"></button>
+        <h2 id="pizza">ВЫБРАТЬ ПИЦЦУ</h2>
+        <div class="pizza-slider">
+            <div class="pizza-slider-item">
+                <div class="pizza-image">
+                    <img src="/images/neapolitana.png" alt="">
+                    <div class="pizza-little">26</div>
+                    <div class="pizza-big">32</div>
+                    <div class="price">150 грн.</div>
+                </div>
+                <div class="pizza-sign">
+                    <h4>ПИЦЦА НЕАПОЛИТАНА, 26 СМ</h4>
+                    <div class="pizza-description">
+                        <p>
+                            Манящая, свежая, аппетитная классическая Неаполитана скрасит любой вечер в любой компании.
+                        </p>
+                    </div>
+                    <div class="pizza-composition">
+                        <p>
+                            <b>Состав:</b> сыр, грибы, чеснок, острый перец, еще длинное наименование
+                        </p>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="check pizza-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                        <div class="product-form pizza-product-form">
+                            <label for="">
+                                КОЛИЧЕСТВО:
+                                <input type="text" value="1" size="1" class="text" data-id="11" data-name="Неаполитана" data-price="150">
+                            </label>
+                            <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-slider-item">
+                <div class="pizza-image">
+                    <img src="/images/pepperony.png" alt="">
+                    <div class="pizza-little">26</div>
+                    <div class="pizza-big">32</div>
+                    <div class="price">120 грн.</div>
+                </div>
+                <div class="pizza-sign">
+                    <h4>ПИЦЦА ПАППЕРОНИ, 26 СМ</h4>
+                    <div class="pizza-description">
+                        <p>
+                            Манящая, свежая, аппетитная классическая Неаполитана скрасит любой вечер в любой компании.
+                        </p>
+                    </div>
+                    <div class="pizza-composition">
+                        <p>
+                            <b>Состав:</b> сыр, грибы, чеснок, острый перец, еще длинное наименование
+                        </p>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="check pizza-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                        <div class="product-form pizza-product-form">
+                            <label for="">
+                                КОЛИЧЕСТВО:
+                                <input type="text" value="1" size="1" class="text" data-id="12" data-name="Папперони" data-price="120">
+                            </label>
+                            <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+            <div class="pizza-slider-item">
+                <div class="pizza-image">
+                    <img src="/images/tropicana.png" alt="">
+                    <div class="pizza-little">26</div>
+                    <div class="pizza-big">32</div>
+                    <div class="price">130 грн.</div>
+                </div>
+                <div class="pizza-sign">
+                    <h4>ПИЦЦА ТРОПИКАНА, 26 СМ</h4>
+                    <div class="pizza-description">
+                        <p>
+                            Манящая, свежая, аппетитная классическая Неаполитана скрасит любой вечер в любой компании.
+                        </p>
+                    </div>
+                    <div class="pizza-composition">
+                        <p>
+                            <b>Состав:</b> сыр, грибы, чеснок, острый перец, еще длинное наименование
+                        </p>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="check pizza-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                        <div class="product-form pizza-product-form">
+                            <label for="">
+                                КОЛИЧЕСТВО:
+                                <input type="text" value="1" size="1" class="text" data-id="13" data-name="Тропикана" data-price="130">
+                            </label>
+                            <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pizza-slider-item">
+                <div class="pizza-image">
+                    <img src="/images/neapolitana.png" alt="">
+                    <div class="pizza-little">26</div>
+                    <div class="pizza-big">32</div>
+                    <div class="price">150 грн.</div>
+                </div>
+                <div class="pizza-sign">
+                    <h4>ПИЦЦА НЕАПОЛИТАНА, 26 СМ</h4>
+                    <div class="pizza-description">
+                        <p>
+                            Манящая, свежая, аппетитная классическая Неаполитана скрасит любой вечер в любой компании.
+                        </p>
+                    </div>
+                    <div class="pizza-composition">
+                        <p>
+                            <b>Состав:</b> сыр, грибы, чеснок, острый перец, еще длинное наименование
+                        </p>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="check pizza-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                        <div class="product-form pizza-product-form">
+                            <label for="">
+                                КОЛИЧЕСТВО:
+                                <input type="text" value="1" size="1" class="text" data-id="11" data-name="Неапролитана" data-price="150">
+                            </label>
+                            <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-slider-item">
+                <div class="pizza-image">
+                    <img src="/images/pepperony.png" alt="">
+                    <div class="pizza-little">26</div>
+                    <div class="pizza-big">32</div>
+                    <div class="price">120 грн.</div>
+                </div>
+                <div class="pizza-sign">
+                    <h4>ПИЦЦА ПАППЕРОНИ, 26 СМ</h4>
+                    <div class="pizza-description">
+                        <p>
+                            Манящая, свежая, аппетитная классическая Неаполитана скрасит любой вечер в любой компании.
+                        </p>
+                    </div>
+                    <div class="pizza-composition">
+                        <p>
+                            <b>Состав:</b> сыр, грибы, чеснок, острый перец, еще длинное наименование
+                        </p>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="check pizza-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                        <div class="product-form pizza-product-form">
+                            <label for="">
+                                КОЛИЧЕСТВО:
+                                <input type="text" value="1" size="1" class="text" data-id="12" data-name="Папперони" data-price="120">
+                            </label>
+                            <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pizza-slider-item">
+                <div class="pizza-image">
+                    <img src="/images/tropicana.png" alt="">
+                    <div class="pizza-little">26</div>
+                    <div class="pizza-big">32</div>
+                    <div class="price">130 грн.</div>
+                </div>
+                <div class="pizza-sign">
+                    <h4>ПИЦЦА ТРОПИКАНА, 26 СМ</h4>
+                    <div class="pizza-description">
+                        <p>
+                            Манящая, свежая, аппетитная классическая Неаполитана скрасит любой вечер в любой компании.
+                        </p>
+                    </div>
+                    <div class="pizza-composition">
+                        <p>
+                            <b>Состав:</b> сыр, грибы, чеснок, острый перец, еще длинное наименование
+                        </p>
+                    </div>
+                    <div class="product-buttons">
+                        <div class="check pizza-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                        <div class="product-form pizza-product-form">
+                            <label for="">
+                                КОЛИЧЕСТВО:
+                                <input type="text" value="1" size="1" class="text" data-id="13" data-name="Тропикана" data-price="130">
+                            </label>
+                            <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</section>
+
+<section class="salat">
+    <button type="button" class="button-down salat-down-button scroll" href="#salat"></button>
+    <div class="salat-content">
+        <h2 id="salat">ВЫБРАТЬ ЗАКУСКИ</h2>
+        <p>Не забудьте выбрать свежие закуски и салаты от нашего шеф-повара,<br>которые гармонично дополнят ваше меню сегодня.</p>
+        <div class="salat-slider">
+            <div class="salat-item">
+                <img src="/images/salat1.jpg" alt="">
+                <div class="salat-price">
+                    <b>25</b> грн. <br>
+                    <b>100</b> гр.
+                </div>
+                <div class="salat-description">
+                    <h2>САЛАТ ГРЕЧЕСКИЙ</h2>
+                    <p>Лучшее дополнение к любому <br> столу из свежих овощей</p>
+                </div>
+                <div class="salat-condition">
+                    <p><b>Состав:</b> сыр, грибы, чеснок, острый перец, <br> еще длинное наименование</p>
+                </div>
+                <div class="salat-product-buttons">
+                    <div class="check salat-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="21" data-name="Салат 'Греческий'" data-price="25">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="salat-item">
+                <img src="/images/salat2.jpg" alt="">
+                <div class="salat-price">
+                    <b>25</b> грн. <br>
+                    <b>100</b> гр.
+                </div>
+                <div class="salat-description">
+                    <h2>САЛАТ МОНТЕКРИСТО</h2>
+                    <p>Лучшее дополнение к любому <br> столу из свежих овощей</p>
+                </div>
+                <div class="salat-condition">
+                    <p><b>Состав:</b> сыр, грибы, чеснок, острый перец, <br> еще длинное наименование</p>
+                </div>
+                <div class="salat-product-buttons">
+                    <div class="check salat-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="22" data-name="Салат 'Монтекристо'" data-price="25">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="salat-item">
+                <img src="/images/salat3.jpg" alt="">
+                <div class="salat-price">
+                    <b>25</b> грн. <br>
+                    <b>100</b> гр.
+                </div>
+                <div class="salat-description">
+                    <h2>САЛАТ ОЛИВЬЕ</h2>
+                    <p>Лучшее дополнение к любому <br> столу из свежих овощей</p>
+                </div>
+                <div class="salat-condition">
+                    <p><b>Состав:</b> сыр, грибы, чеснок, острый перец, <br> еще длинное наименование</p>
+                </div>
+                <div class="salat-product-buttons">
+                    <div class="check salat-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="23" data-name="Салат 'Оливье'" data-price="25">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="salat-item">
+                <img src="/images/salat1.jpg" alt="">
+                <div class="salat-price">
+                    <b>25</b> грн. <br>
+                    <b>100</b> гр.
+                </div>
+                <div class="salat-description no-margin-right">
+                    <h2>САЛАТ ГРЕЧЕСКИЙ</h2>
+                    <p>Лучшее дополнение к любому <br> столу из свежих овощей</p>
+                </div>
+                <div class="salat-condition">
+                    <p><b>Состав:</b> сыр, грибы, чеснок, острый перец, <br> еще длинное наименование</p>
+                </div>
+                <div class="salat-product-buttons">
+                    <div class="check salat-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="21" data-name="Салат 'Греческий'" data-price="25">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="salat-item">
+                <img src="/images/salat1.jpg" alt="">
+                <div class="salat-price">
+                    <b>25</b> грн. <br>
+                    <b>100</b> гр.
+                </div>
+                <div class="salat-description">
+                    <h2>САЛАТ ГРЕЧЕСКИЙ</h2>
+                    <p>Лучшее дополнение к любому <br> столу из свежих овощей</p>
+                </div>
+                <div class="salat-condition">
+                    <p><b>Состав:</b> сыр, грибы, чеснок, острый перец, <br> еще длинное наименование</p>
+                </div>
+                <div class="salat-product-buttons">
+                    <div class="check salat-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="21" data-name="Салат 'Греческий'" data-price="25">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="salat-item">
+                <img src="/images/salat2.jpg" alt="">
+                <div class="salat-price">
+                    <b>25</b> грн. <br>
+                    <b>100</b> гр.
+                </div>
+                <div class="salat-description">
+                    <h2>САЛАТ МОНТЕКРИСТО</h2>
+                    <p>Лучшее дополнение к любому <br> столу из свежих овощей</p>
+                </div>
+                <div class="salat-condition">
+                    <p><b>Состав:</b> сыр, грибы, чеснок, острый перец, <br> еще длинное наименование</p>
+                </div>
+                <div class="salat-product-buttons">
+                    <div class="check salat-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="22" data-name="Салат 'Монтекристо'" data-price="25">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="salat-item">
+                <img src="/images/salat3.jpg" alt="">
+                <div class="salat-price">
+                    <b>25</b> грн. <br>
+                    <b>100</b> гр.
+                </div>
+                <div class="salat-description">
+                    <h2>САЛАТ ОЛИВЬЕ</h2>
+                    <p>Лучшее дополнение к любому <br> столу из свежих овощей</p>
+                </div>
+                <div class="salat-condition">
+                    <p><b>Состав:</b> сыр, грибы, чеснок, острый перец, <br> еще длинное наименование</p>
+                </div>
+                <div class="salat-product-buttons">
+                    <div class="check salat-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="23" data-name="Салат 'Оливье'" data-price="25">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="salat-item">
+                <img src="/images/salat1.jpg" alt="">
+                <div class="salat-price">
+                    <b>25</b> грн. <br>
+                    <b>100</b> гр.
+                </div>
+                <div class="salat-description no-margin-right">
+                    <h2>САЛАТ ГРЕЧЕСКИЙ</h2>
+                    <p>Лучшее дополнение к любому <br> столу из свежих овощей</p>
+                </div>
+                <div class="salat-condition">
+                    <p><b>Состав:</b> сыр, грибы, чеснок, острый перец, <br> еще длинное наименование</p>
+                </div>
+                <div class="salat-product-buttons">
+                    <div class="check salat-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="21" data-name="Салат 'Греческий'" data-price="25">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="drinks">
+    <button type="button" class="button-down drinks-down-button scroll" href="#drinks"></button>
+    <div class="drinks-content">
+        <h2 id="drinks">ВЫБРАТЬ НАПИТКИ</h2>
+        <p>Что может быть лучше освежающего газированного напитка в <br> дополнение к горячей ароматной пицце.</p>
+        <div class="drinks-slider">
+            <div class="drink-item">
+                <img src="/images/cocacola.png" alt="">
+                <h3>КОКА-КОЛА, 1.5 Л.</h3>
+                <p>20 грн.</p>
+                <div class="drinks-product-buttons">
+                    <div class="check drink-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="31" data-name="Кока-Кола" data-price="20">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="drink-item">
+                <img src="/images/schweppes.png" alt="">
+                <h3>ШВЕПС, 1.5 Л.</h3>
+                <p>20 грн.</p>
+                <div class="drinks-product-buttons">
+                    <div class="check drink-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="32" data-name="Швепс" data-price="20">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="drink-item">
+                <img src="/images/cocacola.png" alt="">
+                <h3>КОКА-КОЛА, 1.5 Л.</h3>
+                <p>20 грн.</p>
+                <div class="drinks-product-buttons">
+                    <div class="check drink-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="31" data-name="Кока-Кола" data-price="20">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="drink-item">
+                <img src="/images/sprite.png" alt="">
+                <h3>СПРАЙТ, 1.5 Л.</h3>
+                <p>20 грн.</p>
+                <div class="drinks-product-buttons">
+                    <div class="check drink-check-button"><i class="fa fa-check" aria-hidden="true"></i>ВЫБРАТЬ</div>
+                    <div class="product-form">
+                        <label for="">
+                            КОЛИЧЕСТВО:
+                            <input type="text" value="1" size="1" class="text" data-id="33" data-name="Спрайт" data-price="20">
+                        </label>
+                        <div class="product-button"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="order">
+    <button type="button" class="button-down drinks-down-button scroll" href="#order"></button>
+    <div class="order-description">
+        <h2 id="order">ДОСТАВКА И ОПЛАТА</h2>
+        <p>Не зависимо от того, какой сейчас час, какая погода и как далеко вы <br>
+            живете - наша оперативная доставка с радостью привезет вам заказ <br>
+            в любое время и по любому адресу г. Харькова.</p>
+    </div>
+    <div class="order-form">
+        <form action="">
+            <div class="customer">
+                <h3>АДРЕС И ВРЕМЯ ДОСТАВКИ</h3>
+                <p>Пожалуйста, выберите удобную дату и время доставки, введите ваш полный адрес и телефон, чтобы мы могли убедиться в том, что ваш заказ нашел вас:</p>
+                <label for="">Дата доставки:<br><input type="text" required></label>
+                <label for="">Время  доставки:<br><input type="text" required></label>
+                <label for="">Ваше имя: <br><input type="text" required></label>
+                <label for=""> Ваш телефон: <br><input type="text" required></label>
+                <label for="">Адрес доставки:<br><input type="text" class="custom-input" required></label>
+                <label for="">Коментарий к заказу:<br><textarea name="" id="" cols="86" rows="5"></textarea></label>
+            </div>
+            <div class="order-condition">
+                <div class="condition-content">
+                    <h3>ВАШ <span class="custom-color">ЗАКАЗ</span></h3>
+                    <div class="elements">
+
+                    </div>
+                    <div class="total-price">
+                        <p>ИТОГО: <span></span>грн.</p>
+                    </div>
+                    <div class="confirm-reset">
+                        <div class="reset">
+                            <i class="fa fa-times" aria-hidden="true"></i><span>СБРОСИТЬ</span>
+                        </div>
+                        <button type="submit"><i class="fa fa-check" aria-hidden="true"></i>ОФОРМИТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="contacts">
+        <h4>ПИЦЦА НА ДОМ</h4>
+        <p class="custom-p">Моментальная доставка свежей горячей пиццы прямо к вам одмой
+            или в офис.</p>
+        <p><i class="fa fa-envelope-o" aria-hidden="true"></i><ins>pizzanadom@yandex.ru</ins></p>
+        <p><i class="fa fa-phone" aria-hidden="true"></i>+38(095)-123-45-67</p>
+        <p><i class="fa fa-map-marker" aria-hidden="true"></i>г. Харьков, пр. Электроинструментальный, 6а</p>
+    </div>
+    <div class="nav">
+        <h4>ЗАКАЗАТЬ</h4>
+        <ul>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i><ins><a href="#top" class="scroll">НАЧАЛО</a></ins></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i><ins><a href="#pizza" class="scroll">ВЫБРАТЬ ПИЦЦУ</a></ins></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i><ins><a href="#salat" class="scroll">ВЫБРАТЬ ЗАКУСКУ</a></ins></li>
+            <li><i class="fa fa-angle-right" aria-hidden="true"></i><ins><a href="#drinks" class="scroll">ВЫБРАТЬ НАПИТКИ</a></ins></li>
+        </ul>
+        <button>ОТПРАВИТЬ ЗАЯВКУ</button>
+    </div>
+    <div class="galary">
+        <h4>ГАЛЕРЕЯ INSTAGRAM:</h4>
+        <img src="/images/salat1.jpg" alt="">
+        <img src="/images/salat1.jpg" alt="">
+        <img src="/images/salat1.jpg" alt="">
+        <img src="/images/salat1.jpg" alt="">
+        <img src="/images/salat1.jpg" alt="">
+        <img src="/images/salat1.jpg" alt="">
+        <img src="/images/salat1.jpg" alt="">
+        <img src="/images/salat1.jpg" alt="">
+        <img src="/images/salat1.jpg" alt="">
+    </div>
+    <div class="socials">
+        <h4>МЫ В СОЦ. СЕТЯХ:</h4>
+        <ul>
+            <li><i class="fa fa-facebook facebook" aria-hidden="true"></i><ins>FACEBOOK</ins></li>
+            <li><i class="fa fa-twitter" aria-hidden="true"></i><ins>TWITTER</ins></li>
+            <li><i class="fa fa-vk" aria-hidden="true"></i><ins>ВКОНТАКТЕ</ins></li>
+            <li><i class="fa fa-linkedin" aria-hidden="true"></i><ins>LINKEDIN</ins></li>
+        </ul>
+    </div>
+</footer>
+
+
+<script src="/vendor/bower_components/jquery/dist/jquery.js"></script>
+<script src="/vendor/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/vendor/slick-1.6.0/slick/slick.min.js"></script>
+<script src="/js/slider.js"></script>
+<script src="/js/navigation.js"></script>
+<script src="/js/buttons.js"></script>
+<script src="/js/order.js"></script>
+</body>
+</html>
