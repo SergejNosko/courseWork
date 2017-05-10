@@ -700,9 +700,12 @@ header .slider button:nth-of-type(2):hover{
 .condition-content .elements .order-item input{
     border: none;
     background: none;
-    width: 90%;
+    width: 60%;
     display: inline-block;
     vertical-align: middle;
+}
+.condition-content .elements .order-item span{
+    display: inline-block;
 }
 .order-form .order-condition .condition-content .total-price{
     width: 100%;
@@ -712,8 +715,11 @@ header .slider button:nth-of-type(2):hover{
     margin: 40px 0;
     text-align: center;
 }
-.total-price span{
-    color: #c59d5f;
+.total-price input[type="text"]{
+    background: none;
+    border: none;
+    width: 50px;
+    margin-left: 20px;
 }
 .order-form .order-condition .condition-content .confirm-reset{
     width: 100%;

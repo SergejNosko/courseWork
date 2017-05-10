@@ -554,16 +554,16 @@
             в любое время и по любому адресу г. Харькова.</p>
     </div>
     <div class="order-form">
-        <form action="">
+        <form action="" name="order-form">
             <div class="customer">
                 <h3>АДРЕС И ВРЕМЯ ДОСТАВКИ</h3>
                 <p>Пожалуйста, выберите удобную дату и время доставки, введите ваш полный адрес и телефон, чтобы мы могли убедиться в том, что ваш заказ нашел вас:</p>
-                <label for="">Дата доставки:<br><input type="text" required></label>
-                <label for="">Время  доставки:<br><input type="text" required></label>
-                <label for="">Ваше имя: <br><input type="text" required></label>
-                <label for=""> Ваш телефон: <br><input type="text" required></label>
-                <label for="">Адрес доставки:<br><input type="text" class="custom-input" required></label>
-                <label for="">Коментарий к заказу:<br><textarea name="" id="" cols="86" rows="5"></textarea></label>
+                <label for="">Дата доставки:<br><input type="date" name="date" required></label>
+                <label for="">Время  доставки:<br><input type="text" name="time" required></label>
+                <label for="">Ваше имя: <br><input type="text" name="name" required></label>
+                <label for=""> Ваш телефон: <br><input type="text" name="telephone" required></label>
+                <label for="">Адрес доставки:<br><input type="text" name="address" class="custom-input" required></label>
+                <label for="">Коментарий к заказу:<br><textarea name="comment" id="" cols="86" rows="5"></textarea></label>
             </div>
             <div class="order-condition">
                 <div class="condition-content">
@@ -571,8 +571,9 @@
                     <div class="elements">
 
                     </div>
+                    <p class="message"></p>
                     <div class="total-price">
-                        <p>ИТОГО: <span></span>грн.</p>
+                        <p>ИТОГО: <input type="text" name="totalPrice" value="">грн.</p>
                     </div>
                     <div class="confirm-reset">
                         <div class="reset">

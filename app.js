@@ -21,12 +21,13 @@ if (app.get('env') == 'development') {
 app.use(express.bodyParser());
 app.use(express.cookieParser());
 
-app.use(app.router);
+//app.use(app.router);
 
-app.get('/', function(req, res, next) {
-  res.render("index", {
-  });
-});
+require('./routes')(app);
+
+/*app.get('/', function(req, res, next) {
+
+});*/
 
 
 app.use(express.static(path.join(__dirname, 'public')));
