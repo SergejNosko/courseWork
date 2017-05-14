@@ -36,17 +36,72 @@ function createElements(callback) {
 
     var elements = [
         {
-            name: 'Папперони',
-            price: 120
-        },
-        {
+            id: 11,
             name: 'Неаполитана',
-            price: 150
+            price: 120,
+            imgSrc: "/images/neapolitana.png",
+            description: "Манящая, свежая, аппетитная классическая Неаполитана скрасит любой вечер в любой компании.",
+            condition: "сыр, грибы, чеснок, острый перец, еще длинное наименование"
         },
         {
+            id: 12,
+            name: 'Папперони',
+            price: 150,
+            imgSrc: "/images/pepperony.png",
+            description: "Манящая, свежая, аппетитная классическая Папперони скрасит любой вечер в любой компании.",
+            condition: "сыр, грибы, чеснок, острый перец, еще длинное наименование"
+        },
+        {
+            id: 13,
             name: 'Тропикана',
-            price: 130
+            price: 130,
+            imgSrc: "/images/tropicana.png",
+            description: "Манящая, свежая, аппетитная классическая Тропикана скрасит любой вечер в любой компании.",
+            condition: " сыр, грибы, чеснок, острый перец, еще длинное наименование"
+        },
+        {
+            id: 21,
+            name: 'Салат Греческий',
+            price: 25,
+            imgSrc: "/images/salat1.jpg",
+            description: "Лучшее дополнение к любому столу из свежих овощей",
+            condition: "сыр, грибы, чеснок, острый перец, еще длинное наименование"
+        },
+        {
+            id: 22,
+            name: 'Салат Монтекристо',
+            price: 25,
+            imgSrc: "/images/salat2.jpg",
+            description: "Лучшее дополнение к любому столу из свежих овощей",
+            condition: "сыр, грибы, чеснок, острый перец, еще длинное наименование"
+        },
+        {
+            id: 23,
+            name: 'Салат Оливье',
+            price: 25,
+            imgSrc: "/images/salat3.jpg",
+            description: "Лучшее дополнение к любому столу из свежих овощей",
+            condition: "сыр, грибы, чеснок, острый перец, еще длинное наименование"
+        },
+        {
+            id: 31,
+            name: 'Кока-Кола',
+            price: 20,
+            imgSrc: "/images/cocacola.png"
+        },
+        {
+            id: 32,
+            name: 'Швепс',
+            price: 20,
+            imgSrc: "/images/schweppes.png"
+        },
+        {
+            id: 33,
+            name: 'Спрайт',
+            price: 20,
+            imgSrc: "/images/sprite.png"
         }
+
     ];
     async.each(elements, function (elementData, callback) {
         var element = new mongoose.models.Element(elementData);

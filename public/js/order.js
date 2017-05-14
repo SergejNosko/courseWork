@@ -72,12 +72,11 @@
                 },
                 statusCode: {
                     200: function () {
-                        $('.message', form).html('Заказ успешно оформлен!');
-                        window.location.href = '/';
+                        $('.message', form).html('Заказ успешно оформлен!').css('color', 'green');
                     },
                     403: function (jqXHR) {
                         var error = JSON.parse(jqXHR.responseText);
-                        $('.message', form).html(error.message);
+                        $('.message', form).html(error.message).css('color', 'red');
                     }
                 }
             });

@@ -9,11 +9,11 @@ var mongoose = require('../libs/mongoose'),
     Schema = mongoose.Schema;
 
 var order = new Schema({
-    /*id : {
+    id : {
         type : Number,
         unique: true,
         required : true
-    },*/
+    },
     date : {
         type : String,
         required : true
@@ -38,7 +38,11 @@ var order = new Schema({
         type : String,
         default : ''
     },
-    condition : {
+    totalPrice : {
+        type: String,
+        required: true
+    },
+    items : {
         type : String,
         required : true
     }
@@ -57,7 +61,20 @@ var orderElement = new Schema({
     price : {
         type : Number,
         required : true
+    },
+    imgSrc : {
+        type: String,
+        required: true
+    },
+    description : {
+        type: String
+    },
+    condition : {
+        type: String
     }
 });
+orderElement.statics.findAllElements = function(){
+    return this.find();
+};
 exports.Order = mongoose.model('Order', order);
 exports.Element = mongoose.model('Element', orderElement);

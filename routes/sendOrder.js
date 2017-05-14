@@ -5,12 +5,20 @@ var Order = require('../models/orderDB').Order,
     async = require('async');
 
 exports.post = function (req, res, next) {
-    var date = req.body.date,
+    var id = Math.random(0, 100000),
+        date = req.body.date,
         time = req.body.time,
         name = req.body.name,
         telephone = req.body.telephone,
         address = req.body.address,
         comment = req.body.comment,
-        condition;
-    console.log(req.body);
+        totalPrice = parseInt(req.body.totalPrice),
+        items = JSON.stringify(req.body.items);
+    var order = new Order({id: id, date: date, time: time, name: name, telephone: telephone, address: address, comment: comment, totalPrice: totalPrice, items: items});
+    order.save(function (err) {
+        if(err) next(err);
+        res.send({});
+    });
+
+    //console.log(typeof items);
 };
